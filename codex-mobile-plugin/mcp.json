@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "codex_mobile": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "./server.mjs"
+      ],
+      "cwd": ".",
+      "env_vars": [
+        "CODEX_APP_TOOLS_PIPE_PATH",
+        "CODEX_HOME",
+        "CODEX_THREAD_ID",
+        "PATH",
+        "USERPROFILE",
+        "HOME",
+        "LOCALAPPDATA"
+      ]
+    }
+  }
+}

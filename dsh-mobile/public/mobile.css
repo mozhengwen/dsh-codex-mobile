@@ -1,0 +1,59 @@
+/* Mobile shell additions injected into DSH's index. Keep this file additive:
+   it must not depend on hashed DSH class names or replace host styling. */
+html[data-dsh-mobile] {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  overscroll-behavior-y: none;
+}
+
+html[data-dsh-mobile] body {
+  min-height: 100%;
+  margin: 0;
+  background: var(--dsw-alias-bg-base, #151517);
+  -webkit-tap-highlight-color: transparent;
+}
+
+html[data-dsh-mobile] #root {
+  height: 100dvh;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  box-sizing: border-box;
+}
+
+html[data-dsh-mobile] button,
+html[data-dsh-mobile] a,
+html[data-dsh-mobile] [role="button"] {
+  touch-action: manipulation;
+}
+
+/* iOS zooms a focused input below 16px, which shifts the whole app. */
+@media (pointer: coarse) {
+  html[data-dsh-mobile] input,
+  html[data-dsh-mobile] textarea,
+  html[data-dsh-mobile] select {
+    font-size: 16px !important;
+  }
+  /* Resize handles are desktop affordances and become tiny traps on touch. */
+  html[data-dsh-mobile] [data-side] {
+    display: none !important;
+  }
+}
+
+@media (max-width: 520px) {
+  html[data-dsh-mobile] body {
+    overscroll-behavior: none;
+  }
+  /* Keep the reading column from acquiring a horizontal scrollbar when a
+     wide tool result is present; the tool result itself still scrolls. */
+  html[data-dsh-mobile] #root {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+}
+
+@media (display-mode: standalone) {
+  html[data-dsh-mobile] body {
+    overscroll-behavior: none;
+  }
+}

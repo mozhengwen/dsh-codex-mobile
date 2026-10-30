@@ -1,0 +1,47 @@
+# Local tools, captured desktop data, personal backups, and unrelated app work.
+/.tools/
+/.release/
+/.github-local/
+/_verge_backup_*/
+/bili/
+/dsh-line-puppy-theme/
+/dsh-theme-plugin-guide.md
+/SECURITY-AUDIT.md
+# Historical screenshots, private deployment site, and obsolete instance config.
+/dsh-mobile/docs/
+/codex-mobile-plugin/docs/
+/dsh-mobile-server/site/
+/dsh-mobile-server/deploy/nginx-apex.conf
+
+# Dependencies and build products.
+**/node_modules/
+**/.gradle/
+**/.kotlin/
+**/.idea/
+**/*.log
+**/build/
+**/local.properties
+*.apk
+*.aab
+
+# Credentials must be kept outside the repository.
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+**/signing.properties
+**/*-release.properties
+**/key.properties
+.env
+.env.*
+*.env
+**/.env
+**/.env.*
+!**/*.env.example
+!**/.env.example
+**/runtime.json
+**/bootstrap.json
+**/state.json
+**/uploads/

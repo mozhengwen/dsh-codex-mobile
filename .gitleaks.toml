@@ -1,0 +1,10 @@
+title = "DSH mobile publishable source"
+[extend]
+useDefault = true
+[allowlist]
+description = "Non-publishable local work and generated dependencies are excluded from the source release"
+paths = [
+ '''(^|[/\\])(\.tools|bili|node_modules|build|\.gradle|\.kotlin)([/\\]|$)''',
+ '''(^|[/\\])_verge_backup_[^/\\]+([/\\]|$)''',
+ '''(?i)\.(apk|aab|jks|keystore|p12|pfx)$'''
+]

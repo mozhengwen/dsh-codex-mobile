@@ -1,0 +1,6 @@
+# Copy outside the repository and point DSH_SIGNING_PROPERTIES at that copy.
+# Never put a real keystore or password into the source release.
+storeFile=/absolute/path/to/your-release-key.jks
+storePassword=CHANGE_ME
+keyAlias=your-release-alias
+keyPassword=CHANGE_ME

@@ -1,0 +1,35 @@
+# DSH Mobile central backend
+#
+# Deployed at /opt/dsh-mobile-server on your own relay server.
+# nginx terminates TLS and proxies to 127.0.0.1:8787.
+
+[Unit]
+Description=DSH Mobile central relay
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=dsh-mobile-relay
+Group=dsh-mobile-relay
+WorkingDirectory=/opt/dsh-mobile-server
+EnvironmentFile=/etc/dsh-mobile-server.env
+ExecStart=/usr/bin/node /opt/dsh-mobile-server/server.mjs
+Restart=always
+RestartSec=2
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+CapabilityBoundingSet=
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target
+

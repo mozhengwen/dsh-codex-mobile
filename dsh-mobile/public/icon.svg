@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="DSH Mobile">
+  <defs>
+    <linearGradient id="bg" x1="40" y1="30" x2="472" y2="490" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5686fe"/>
+      <stop offset="0.55" stop-color="#6f9bff"/>
+      <stop offset="1" stop-color="#7aaaff"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="96" y1="48" x2="352" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="136" fill="url(#bg)"/>
+  <rect x="16" y="16" width="480" height="480" rx="136" fill="url(#shine)"/>
+  <rect x="144" y="80" width="224" height="352" rx="56" fill="#111318" fill-opacity=".9" stroke="#ffffff" stroke-opacity=".28" stroke-width="4"/>
+  <path d="M184 176l42 42-42 42" fill="none" stroke="#eaf1ff" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M252 268h72" fill="none" stroke="#eaf1ff" stroke-width="24" stroke-linecap="round"/>
+  <circle cx="256" cy="376" r="16" fill="#eaf1ff"/>
+</svg>

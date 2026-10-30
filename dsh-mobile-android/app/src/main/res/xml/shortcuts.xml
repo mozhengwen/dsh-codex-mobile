@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+  <shortcut
+    android:shortcutId="setup"
+    android:enabled="true"
+    android:icon="@mipmap/ic_launcher"
+    android:shortcutShortLabel="@string/setup_shortcut">
+    <intent
+      android:action="com.local.dshmobile.SETUP"
+      android:targetPackage="com.local.dshmobile"
+      android:targetClass="com.local.dshmobile.MainActivity" />
+  </shortcut>
+  <shortcut
+    android:shortcutId="reload"
+    android:enabled="true"
+    android:icon="@mipmap/ic_launcher"
+    android:shortcutShortLabel="@string/reload_shortcut">
+    <intent
+      android:action="com.local.dshmobile.RELOAD"
+      android:targetPackage="com.local.dshmobile"
+      android:targetClass="com.local.dshmobile.MainActivity" />
+  </shortcut>
+</shortcuts>

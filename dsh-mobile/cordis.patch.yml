@@ -1,0 +1,6 @@
+# DSH Mobile bundle: one dual-face row.
+# The Host half opens the paired phone gateway; the ./client export renders
+# the sidebar entry and the control panel inside the DSH web GUI.
+- insert:
+    - id: dsh-mobile
+      name: '@local/dsh-mobile'

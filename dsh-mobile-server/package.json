@@ -1,0 +1,11 @@
+{
+  "name": "dsh-mobile-server",
+  "version": "0.3.2",
+  "private": true,
+  "scripts": { "test": "node --test test/*.test.mjs" },
+  "type": "module",
+  "description": "Central relay backend for DSH Mobile",
+  "dependencies": {
+    "ws": "^8.18.3"
+  }
+}

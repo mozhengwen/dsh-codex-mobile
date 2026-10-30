@@ -1,0 +1,11 @@
+{
+  "name": "codex-mobile",
+  "version": "0.5.2",
+  "description": "手机远程操作 Codex 桌面任务：工作区、新建、发送、停止和会话快照。",
+  "interface": {
+    "displayName": "手机远控",
+    "shortDescription": "在手机上继续使用 Codex 桌面任务",
+    "category": "Productivity"
+  }
+}
+

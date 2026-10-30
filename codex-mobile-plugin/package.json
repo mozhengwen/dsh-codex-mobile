@@ -1,0 +1,15 @@
+{
+  "name": "codex-mobile-plugin",
+  "version": "0.5.2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "build:ui": "node build-ui.mjs"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/ext-apps": "2.0.3",
+    "esbuild": "0.28.2"
+  }
+}
+

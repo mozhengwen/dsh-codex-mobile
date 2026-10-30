@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">DSH 手机版</string>
+  <string name="setup_title">DSH 手机版</string>
+  <string name="setup_subtitle">连接电脑上正在运行的 DSH 桌面版。使用同一套会话、输入框和工具审批。</string>
+  <string name="scan_button">扫描配对二维码</string>
+  <string name="manual_title">或手动连接</string>
+  <string name="url_hint">电脑地址，例如 192.168.1.5:47821</string>
+  <string name="code_hint">6 位配对码</string>
+  <string name="connect_button">连接 DSH</string>
+  <string name="pairing">正在配对…</string>
+  <string name="pairing_success">配对成功，正在打开 DSH…</string>
+  <string name="pairing_failed">配对失败：%1$s</string>
+  <string name="bad_url">请输入有效的电脑地址</string>
+  <string name="bad_code">请输入 6 位配对码</string>
+  <string name="camera_missing">没有可用的相机，请改用手动配对码</string>
+  <string name="same_wifi">手机和电脑连接互联网即可，电脑端需保持 DSH 运行。首次使用请扫描电脑上的配对二维码。</string>
+  <string name="privacy_note">只连接你信任的电脑。连接后手机拥有与电脑相同的 DSH 操作权限。</string>
+  <string name="reload">刷新页面</string>
+  <string name="repair">重新配对</string>
+  <string name="exit_title">退出 DSH 手机版？</string>
+  <string name="exit_message">DSH 桌面版会继续在电脑上运行。</string>
+  <string name="exit_confirm">退出</string>
+  <string name="cancel">取消</string>
+  <string name="download_started">已开始下载</string>
+  <string name="download_failed">无法下载这个文件</string>
+  <string name="download_permission">需要存储权限才能保存下载文件</string>
+  <string name="server_unreachable">无法连接电脑。请确认电脑上的 DSH 桌面版仍在运行，并且手机与电脑在同一 Wi-Fi。</string>
+  <string name="retry">重试</string>
+  <string name="loading">正在连接…</string>
+  <string name="setup_shortcut">重新配对</string>
+  <string name="reload_shortcut">刷新 DSH</string>
+  <string name="scan_prompt">扫描电脑上「手机远控」的二维码</string>
+  <string name="pair_again_hint">要换一台电脑，请长按桌面图标选择「重新配对」。</string>
+  <string name="file_chooser">选择文件</string>
+  <string name="permission_needed">需要相机/麦克风权限才能使用该功能</string>
+</resources>
